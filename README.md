@@ -26,8 +26,8 @@ The final prediction is calculated either as the sum or the product of all indiv
 $$K_{\text{total}}(x_p, x_n) = K_{\text{km}}(x_p, x_n) + K_{\text{days}}(x_p, x_n) + K_{\text{hours}}(x_p, x_n)$$
 or
 $$K_{\text{total}}(x_p, x_n) = K_{\text{km}}(x_p, x_n) \cdot K_{\text{days}}(x_p, x_n) \cdot K_{\text{hours}}(x_p, x_n),$$
-where each of the three Kernels is computed as follows (example for km-Kernel):
-$$K_{\text{km}}(x_p, x_n) = \exp\left(-(\frac{|x_n^{(\text{km})}-x_p^{(\text{km})}|}{h^{(\text{km})}})^2\right).$$
+where each of the three Kernels is computed as follows (example for days-Kernel):
+$$K_{\text{days}}(x_p, x_n) = \exp\left(-(\frac{|x_n^{(\text{days})}-x_p^{(\text{days})}|}{h^{(\text{days})}})^2\right).$$
 
 This function resembles a PDF of the Gaussian Normal Distribution (e.g. without normalizing constant), where the difference from the mean is replaced by the Euclidean Distance of the two points in the respective dimension and the smoothing parameter $h$ takes the role of the standard deviation.
 
