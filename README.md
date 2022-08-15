@@ -1,8 +1,16 @@
-# Kernel Regression for Temperature Prediction 
+# Kernel Regression for Temperature Prediction using PySpark
 
 As part of the course Big Data Analytics at LiU, we had to implement a Kernel Regression Model in PySpark to predict the hourly temperatures for a certain date and location in Sweden based on historical data. The final model was run in parallel on the HPC cluster from the National Supercomputer Centre in Linköping, to showcase the power of parallelized computations on a Hadoop Distributed File System (HDFS) with PySpark for machine learning usecases on datasets that are far too big to fit in memory. 
 
 The used dataset contains hourly temperature measurements from over 800 weather stations all over Sweden over multiple years. Since the size of the csv-file is > 2 GB, there is only a small example file in the data folder, showing the structure of the data. This is why the results presented here cannot be replicated with this repo alone. 
+
+The data has the following structure:
+
+|Station number| Date| Time| Air temperature (in °C) |Quality|
+|--------------|-----|-----|-------------------------|-------|
+
+
+
 
 ## Kernel-Regression-Model
 
